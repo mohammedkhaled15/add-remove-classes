@@ -63,7 +63,7 @@ addInput.addEventListener("blur", function(){
 
     document.getElementById("remove-me").style.display = "none" //making the message disappear
     
-    inputClasses = addInput.value.toLowerCase().split(" ") //creating array of words
+    inputClasses = addInput.value.trim().toLowerCase().split(" ") //creating array of words
 
     for(let i = 0; i< inputClasses.length; i++){ //pushing elements from last array to another array to sort it
       resultClasses.push(inputClasses[i])}
